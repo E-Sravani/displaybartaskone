@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/a0f3cd11b7.js" crossorigin="anonymous"></script>
+    <style>
+        ul{
+    list-style: none;
+} 
+ul>li{
+color:black;
+padding: 10px;
+}
+.bar{
+    position: absolute;
+    top: 276px;
+    left: 650px;
+    background-color: orange;
+    width:200px;
+    height:250px;
+    display: flex;
+}
+.perm identity {
+    font: awesome;
+
+}
+.profile{
+    display: none;
+}
+ul li:hover .profile{
+    display: block;
+    position: absolute;
+    width:150px ;
+    height: 100px;
+    background-color:beige;
+}
+.Messages{
+    display: none;
+}
+ul li:hover .Messages{
+    display: block;
+    position: absolute;
+    width:150px ;
+    height: 150px;
+    background-color:beige;
+}
+.Settings{
+    display: none;
+}
+ul li:hover .Settings{
+    display: block;
+    position: absolute;
+    width:150px ;
+    height: 100px;
+    background-color:beige;
+}
+        
+        
+    </style>
+    <title>DisplayBar </title>
+</head>
+<body style="background-color: black;">
+    <div class="bar">
+    <ul>
+        <li style="padding: 10px;"  ><i class="fa-regular fa-user"></i>  Profile <ul class="profile">
+     <li>Posts</li><hr>
+     <li>Picture</li>
+
+        </ul></li><hr>
+        
+        <li  style="padding: 10px;"><i class="fa-regular fa-envelope"></i>  Messages <ul class="Messages">
+            <li>new</li><hr>
+            <li>sent</li><hr>
+            <li>spam</li>
+       </ul> </li><hr>
+        <li  style="padding: 10px;"><i class="fa-sharp fa-solid fa-gear"></i>  Settings <ul class="Settings">
+            <li>Password</li><hr>
+            <li>Language</li>
+       
+               </ul> </li><hr>
+        <li  style="padding: 10px;"><i class="fa-sharp fa-light fa-right-from-bracket"></i>  Logout</li>
+    </ul>
+</div>
+</body>
+</html>
